@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOUCHE | Café de spécialité à Bruxelles</title>
+<meta name="description" content="BOUCHE, café de spécialité à Bruxelles (quartier Namur). Cafés grands crus en rotation, pâtisseries maison, petite carte du midi. Ouvert 7j/7.">
+<meta name="keywords" content="café de spécialité Bruxelles, coffee shop Bruxelles, café Namur Bruxelles, specialty coffee, café grand cru, batch brew Bruxelles, brunch café Bruxelles, torréfacteur Bruxelles, BOUCHE coffee, meilleur café Bruxelles">
+<link rel="canonical" href="https://www.bouche.coffee/">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="BOUCHE | Café de spécialité à Bruxelles">
+<meta property="og:description" content="Café de spécialité au cœur de Bruxelles : cafés grands crus, pâtisseries maison, ambiance jeune et conviviale. Rue de Namur 4.">
+<meta property="og:image" content="images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_02.webp">
+<meta property="og:url" content="https://www.bouche.coffee/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BOUCHE | Café de spécialité à Bruxelles">
+<meta name="twitter:description" content="Café de spécialité au cœur de Bruxelles : cafés grands crus, pâtisseries maison, ambiance jeune et conviviale.">
+<meta name="twitter:image" content="images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_02.webp">
+
+<!-- Local SEO -->
+<meta name="geo.region" content="BE-BRU">
+<meta name="geo.placename" content="Bruxelles">
+<meta name="geo.position" content="50.8425;4.3625">
+<meta name="ICBM" content="50.8425, 4.3625">
+
+<link rel="icon" href="images/logo-bouche.jpg" type="image/jpeg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind (CDN, config inline) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#F4EEE3',
+          'cream-light': '#FAF6EF',
+          brown: '#241A12',
+          'brown-soft': '#3B2B1D',
+          terracotta: '#7C231C',
+          gold: '#C9962E',
+          line: '#DCD0BC'
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Preload hero image for LCP -->
+<link rel="preload" as="image" href="images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_02.webp">
+
+<!-- JSON-LD: CafeOrCoffeeShop -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "BOUCHE - Specialty Coffee",
+  "image": "https://www.bouche.coffee/images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_02.webp",
+  "url": "https://www.bouche.coffee/",
+  "telephone": "",
+  "priceRange": "€€",
+  "servesCuisine": "Café de spécialité",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rue de Namur 4",
+    "addressLocality": "Bruxelles",
+    "postalCode": "1000",
+    "addressCountry": "BE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.8425,
+    "longitude": 4.3625
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "09:00", "closes": "18:00" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/bouche.coffee/",
+    "https://www.tiktok.com/@bouche.coffee",
+    "https://www.facebook.com/bouchecoffee/"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "1640"
+  }
+}
+</script>
+
+<!-- JSON-LD: WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BOUCHE",
+  "url": "https://www.bouche.coffee/"
+}
+</script>
+</head>
+
+<body class="bg-cream-light text-brown">
+
+<!-- NAV -->
+<header id="site-nav" class="fixed top-0 left-0 w-full z-50 bg-cream-light/95 backdrop-blur border-b border-line transition-shadow duration-300">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-16 md:h-20">
+    <a href="#hero" aria-label="BOUCHE - retour à l'accueil" class="shrink-0">
+      <img src="images/logo-bouche.jpg" alt="BOUCHE" class="h-14 md:h-[68px] w-auto -my-2" width="1080" height="1080">
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest" aria-label="Navigation principale">
+      <a href="#carte" class="hover:text-terracotta transition-colors">Carte</a>
+      <a href="#pratique" class="hover:text-terracotta transition-colors">Infos pratiques</a>
+      <a href="#avis" class="hover:text-terracotta transition-colors">Avis</a>
+      <a href="#photos" class="hover:text-terracotta transition-colors">Photos</a>
+      <div class="relative flex items-center gap-3 pl-6 ml-2 border-l border-line">
+        <span class="pointer-events-none absolute -top-7 left-[46px] -translate-x-1/2 flex flex-col items-center gap-0.5 font-serif italic text-[15px] text-terracotta whitespace-nowrap">
+          jetez un œil
+          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" class="shrink-0">
+            <path d="M8 1v11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3 8.5L8 13l5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <a href="https://www.instagram.com/bouche.coffee/" target="_blank" rel="noopener" aria-label="Instagram BOUCHE" class="cta-btn text-brown hover:text-terracotta">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@bouche.coffee" target="_blank" rel="noopener" aria-label="TikTok BOUCHE" class="cta-btn text-brown hover:text-terracotta">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/bouchecoffee/" target="_blank" rel="noopener" aria-label="Facebook BOUCHE" class="cta-btn text-brown hover:text-terracotta">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.3C16.2 4.26 15.2 4.17 14 4.17c-2.4 0-4 1.46-4 4.14V10.5H7.5v3H10V21h3.5z"/></svg>
+        </a>
+      </div>
+    </nav>
+
+    <button id="burger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="w-6 h-0.5 bg-brown"></span>
+      <span class="w-6 h-0.5 bg-brown"></span>
+      <span class="w-6 h-0.5 bg-brown"></span>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu md:hidden absolute top-full left-0 w-full bg-cream-light border-b border-line">
+    <nav class="flex flex-col p-6 gap-5 font-mono text-sm uppercase tracking-widest" aria-label="Navigation mobile">
+      <a href="#carte">Carte</a>
+      <a href="#pratique">Infos pratiques</a>
+      <a href="#avis">Avis</a>
+      <a href="#photos">Photos</a>
+      <div class="flex items-center gap-5 pt-2">
+        <a href="https://www.instagram.com/bouche.coffee/" target="_blank" rel="noopener" aria-label="Instagram BOUCHE" class="text-brown hover:text-terracotta">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@bouche.coffee" target="_blank" rel="noopener" aria-label="TikTok BOUCHE" class="text-brown hover:text-terracotta">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/bouchecoffee/" target="_blank" rel="noopener" aria-label="Facebook BOUCHE" class="text-brown hover:text-terracotta">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.3C16.2 4.26 15.2 4.17 14 4.17c-2.4 0-4 1.46-4 4.14V10.5H7.5v3H10V21h3.5z"/></svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-labelledby="hero-title" class="relative h-screen min-h-[640px] flex items-end md:items-center">
+  <img
+    src="images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_02.webp"
+    alt="Comptoir en travertin et machine à café La Marzocco blanche du café BOUCHE à Bruxelles"
+    class="absolute inset-0 w-full h-full object-cover"
+    loading="eager"
+    fetchpriority="high"
+    width="1400" height="933"
+  >
+  <div class="absolute inset-0 bg-brown/35"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 pb-16 md:pb-0 w-full">
+    <p class="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-cream-light/80 mb-4 reveal">Rue de Namur 4 — Bruxelles</p>
+    <h1 id="hero-title" class="font-display text-5xl sm:text-6xl md:text-8xl text-cream-light leading-none mb-6 reveal">BOUCHE</h1>
+    <p class="font-serif italic text-2xl md:text-4xl text-cream-light max-w-2xl mb-10 reveal">Specialty coffee, with care.</p>
+
+    <div class="flex flex-wrap gap-4 reveal">
+      <a href="#carte" class="cta-btn bg-gold text-brown font-semibold px-6 py-3 rounded-full">Voir la carte</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=BOUCHE+Specialty+Coffee+Rue+de+Namur+4+1000+Bruxelles" target="_blank" rel="noopener" class="cta-btn border border-cream-light text-cream-light font-semibold px-6 py-3 rounded-full">Itinéraire</a>
+    </div>
+  </div>
+
+  <a href="#carte" class="scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-cream-light" aria-label="Défiler vers la carte">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </a>
+</section>
+
+<!-- CARTE -->
+<section id="carte" aria-labelledby="carte-title" class="max-w-7xl mx-auto px-5 md:px-8 py-24 md:py-32">
+  <div class="reveal mb-14 md:mb-16 text-center">
+    <p class="font-mono text-xs uppercase tracking-[0.3em] text-terracotta mb-3">La carte</p>
+    <h2 id="carte-title" class="font-display text-4xl md:text-6xl">La carte</h2>
+  </div>
+
+  <!-- Category filter pills -->
+  <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+    <button data-filter="all" class="bg-brown text-cream-light font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-brown">Tout</button>
+    <button data-filter="black" class="font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-line">Black</button>
+    <button data-filter="milk" class="font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-line">Milk</button>
+    <button data-filter="filter" class="font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-line">Filter</button>
+    <button data-filter="more" class="font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-line">More</button>
+    <button data-filter="food" class="font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-line">Food</button>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger">
+
+    <article data-category="black" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/ig-03-tasses-marzocco.jpg" alt="Tasses en céramique peintes posées sur la machine La Marzocco de BOUCHE" class="w-full h-full object-cover" loading="lazy" width="1440" height="1798">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Black</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Espresso / Long Black / Americano</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Nos cafés en rotation, servis noirs.</p>
+        <p class="font-mono text-sm">3,00 €</p>
+      </div>
+    </article>
+
+    <article data-category="milk" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/machiatto.webp" alt="Macchiato servi chez BOUCHE" class="w-full h-full object-cover" loading="lazy" width="1500" height="2250">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Milk</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Macchiato / Cortado / Cappuccino / Flat White</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Lait travaillé, texture soyeuse.</p>
+        <p class="font-mono text-sm">3,80 €</p>
+      </div>
+    </article>
+
+    <article data-category="milk" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/latte.webp" alt="Latte art servi dans une tasse bleue chez BOUCHE" class="w-full h-full object-cover" loading="lazy" width="765" height="1020">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Milk</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Latte</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Notre grand classique.</p>
+        <p class="font-mono text-sm">4,20 €</p>
+      </div>
+    </article>
+
+    <article data-category="filter" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/menu-batch-brew.jpg" alt="Café filtre versé dans une tasse BOUCHE au motif smiley" class="w-full h-full object-cover" loading="lazy" width="700" height="1049">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Filter</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Batch Brew</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Préparé en grande quantité, tout en douceur.</p>
+        <p class="font-mono text-sm">3,00 €</p>
+      </div>
+    </article>
+
+    <article data-category="filter" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/ig-02-hand-brew-bar.jpg" alt="Bar à café filtre de BOUCHE avec bouilloires et matériel hand brew" class="w-full h-full object-cover" loading="lazy" width="3082" height="5477">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Filter</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Hand Brew</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Filtre préparé minute par notre barista.</p>
+        <p class="font-mono text-sm">4,50 €</p>
+      </div>
+    </article>
+
+    <article data-category="filter" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden relative">
+      <span class="absolute top-4 right-4 z-10 bg-gold text-brown text-[10px] font-mono uppercase tracking-widest px-2 py-1 rounded-full">Populaire</span>
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/ig-05-cafes-grains.jpg" alt="Caisse de sachets de café grands crus en rotation chez BOUCHE" class="w-full h-full object-cover" loading="lazy" width="2780" height="4939">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Filter</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Reserve Menu</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Cafés "grands crus" en rotation saisonnière, à demander au comptoir.</p>
+        <p class="font-mono text-sm">Sur demande</p>
+      </div>
+    </article>
+
+    <article data-category="more" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/macha.webp" alt="Matcha latte et pâtisserie servis chez BOUCHE" class="w-full h-full object-cover" loading="lazy" width="765" height="1020">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">More</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Hot Chocolate / Chai / Matcha Latte</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Pour les envies plus douces.</p>
+        <p class="font-mono text-sm">4,00 €</p>
+      </div>
+    </article>
+
+    <article data-category="more" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/fresh-juice.jpeg" alt="Barista de BOUCHE servant un jus frais au comptoir" class="w-full h-full object-cover" loading="lazy" width="1024" height="1536">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">More</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Lemonade / Fresh Juice / Kombucha</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Rafraîchissant, fait sur place.</p>
+        <p class="font-mono text-sm">3,50 – 4,50 €</p>
+      </div>
+    </article>
+
+    <article data-category="food" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/patiseries.webp" alt="Pâtisseries maison de BOUCHE présentées en vitrine" class="w-full h-full object-cover" loading="lazy" width="1360" height="1020">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Food · Sucré</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Cinnamon knot, cookies, banana bread</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Tout est fait maison, au comptoir.</p>
+        <p class="font-mono text-sm">Prix au comptoir</p>
+      </div>
+    </article>
+
+    <article data-category="food" class="menu-card bg-white/60 border border-line rounded-2xl overflow-hidden relative lg:col-start-2">
+      <span class="absolute top-4 right-4 z-10 bg-terracotta text-cream-light text-[10px] font-mono uppercase tracking-widest px-2 py-1 rounded-full">Midi</span>
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="images/menu-plat-midi.jpg" alt="Petits plats de saison servis le midi chez BOUCHE, légumes et pain grillé" class="w-full h-full object-cover" loading="lazy" width="700" height="1050">
+      </div>
+      <div class="p-6">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta">Food · Salé</span>
+        <h3 class="text-lg font-semibold mt-2 mb-1">Crispy chicken, mayo végétale, aubergine fumée</h3>
+        <p class="text-sm text-brown-soft/80 mb-4">Petite carte de saison, principalement végétarienne, dispo le midi.</p>
+        <p class="font-mono text-sm">15,00 €</p>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="mt-10 grid sm:grid-cols-3 gap-4 font-mono text-xs uppercase tracking-widest text-brown-soft/80 reveal">
+    <p>+ Grand format : +0,40 €</p>
+    <p>+ Lait végétal (avoine, soja, coco) : +0,50 €</p>
+    <p>+ Shot supplémentaire : +1,00 € · Apportez votre tasse : −0,30 €</p>
+  </div>
+</section>
+
+<!-- PRATIQUE -->
+<section id="pratique" aria-labelledby="pratique-title" class="bg-brown text-cream-light py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+
+    <div class="reveal">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-gold mb-3">Infos pratiques</p>
+      <h2 id="pratique-title" class="font-display text-4xl md:text-6xl mb-10">Nous trouver</h2>
+
+      <div class="space-y-8">
+        <div class="flex gap-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 mt-1" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <p class="font-semibold">Adresse</p>
+            <p class="text-cream-light/80">Rue de Namur 4, 1000 Bruxelles</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=BOUCHE+Specialty+Coffee+Rue+de+Namur+4+1000+Bruxelles" target="_blank" rel="noopener" class="cta-btn inline-block mt-3 text-sm border border-cream-light/60 px-4 py-2 rounded-full">Itinéraire</a>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div class="w-full">
+            <p class="font-semibold mb-2">Horaires</p>
+            <table class="w-full text-sm text-cream-light/80">
+              <tbody>
+                <tr class="border-b border-cream-light/15"><td class="py-1.5">Lundi – Vendredi</td><td class="py-1.5 text-right font-mono">07:30 – 18:00</td></tr>
+                <tr><td class="py-1.5">Samedi – Dimanche</td><td class="py-1.5 text-right font-mono">09:00 – 18:00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 mt-1" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+          <div>
+            <p class="font-semibold">Nous suivre</p>
+            <p class="text-cream-light/80 text-sm mb-3">Pas de téléphone ni d'email — retrouvez-nous en ligne ou passez directement.</p>
+            <div class="flex gap-3">
+              <a href="https://www.instagram.com/bouche.coffee/" target="_blank" rel="noopener" aria-label="Instagram de BOUCHE" class="cta-btn border border-cream-light/60 rounded-full p-2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@bouche.coffee" target="_blank" rel="noopener" aria-label="TikTok de BOUCHE" class="cta-btn border border-cream-light/60 rounded-full p-2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3.2v13.6a2.9 2.9 0 1 1-2.2-2.8v-3.2a6.1 6.1 0 1 0 5.4 6V8.9a7.6 7.6 0 0 0 4.5 1.5V7.2a4.3 4.3 0 0 1-4.5-4.2Z"/></svg>
+              </a>
+              <a href="https://www.facebook.com/bouchecoffee/" target="_blank" rel="noopener" aria-label="Facebook de BOUCHE" class="cta-btn border border-cream-light/60 rounded-full p-2.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal rounded-2xl overflow-hidden border border-cream-light/20 h-[420px] md:h-full min-h-[420px]">
+      <iframe
+        title="Localisation de BOUCHE Specialty Coffee sur Google Maps"
+        src="https://www.google.com/maps?q=BOUCHE+Specialty+Coffee,+Rue+de+Namur+4,+1000+Bruxelles&output=embed"
+        class="w-full h-full"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- AVIS -->
+<section id="avis" aria-labelledby="avis-title" class="relative overflow-hidden max-w-7xl mx-auto px-5 md:px-8 py-24 md:py-32">
+  <div class="avis-wave-bg" aria-hidden="true">
+    <svg class="avis-wave avis-wave-1" viewBox="0 0 3600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="wave1-tile" d="M0 250C200 150 400 50 600 100C800 150 1000 350 1200 300C1400 250 1600 150 1800 250V500H0V250Z"/>
+      <use href="#wave1-tile" x="1800"/>
+    </svg>
+    <svg class="avis-wave avis-wave-2" viewBox="0 0 3600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="wave2-tile" d="M0 280C200 220 400 340 600 300C800 260 1000 180 1200 220C1400 260 1600 320 1800 280V500H0V280Z"/>
+      <use href="#wave2-tile" x="1800"/>
+    </svg>
+    <svg class="avis-wave avis-wave-3" viewBox="0 0 3600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="wave3-tile" d="M0 320C200 360 400 300 600 330C800 360 1000 300 1200 320C1400 340 1600 300 1800 330V500H0V320Z"/>
+      <use href="#wave3-tile" x="1800"/>
+    </svg>
+  </div>
+
+  <div class="relative z-10 reveal text-center mb-12">
+    <p class="font-mono text-xs uppercase tracking-[0.3em] text-terracotta mb-3">Avis Google</p>
+    <h2 id="avis-title" class="font-display text-4xl md:text-6xl mb-6">C'est vous qui le dites...</h2>
+    <div class="flex items-center justify-center gap-3">
+      <span class="text-3xl font-semibold">4,6</span>
+      <div class="flex text-gold" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 7 1-5 5 1.2 7-6.3-3.3L5.7 21l1.2-7-5-5 7-1z"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 7 1-5 5 1.2 7-6.3-3.3L5.7 21l1.2-7-5-5 7-1z"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 7 1-5 5 1.2 7-6.3-3.3L5.7 21l1.2-7-5-5 7-1z"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 7 1-5 5 1.2 7-6.3-3.3L5.7 21l1.2-7-5-5 7-1z"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" opacity="0.5"><path d="M12 2l3.1 6.3 7 1-5 5 1.2 7-6.3-3.3L5.7 21l1.2-7-5-5 7-1z"/></svg>
+      </div>
+      <span class="text-brown-soft/70 text-sm">(1 640 avis)</span>
+    </div>
+  </div>
+
+  <div class="relative z-10 reveal">
+    <div id="review-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+
+      <article class="review-card snap-start shrink-0 w-[280px] md:w-[320px] bg-white border border-line rounded-2xl p-6">
+        <div class="flex text-gold mb-3" aria-hidden="true">★★★★★</div>
+        <p class="text-sm text-brown-soft/90 mb-4">« Dans un petit coin calme et tout mignon de Bruxelles, le café est vraiment très stylé avec de belles couleurs orangées. L'accueil était vraiment top, et la brioche vraiment très moelleuse et délicieuse. »</p>
+        <p class="font-mono text-xs uppercase tracking-widest text-brown-soft/60">Julie Stock</p>
+      </article>
+
+      <article class="review-card snap-start shrink-0 w-[280px] md:w-[320px] bg-white border border-line rounded-2xl p-6">
+        <div class="flex text-gold mb-3" aria-hidden="true">★★★★★</div>
+        <p class="text-sm text-brown-soft/90 mb-4">« Le cappuccino est d'une douceur parfaite, avec une mousse onctueuse et un latte art qui donne déjà envie avant même d'y goûter. Un vrai moment de bonheur simple. »</p>
+        <p class="font-mono text-xs uppercase tracking-widest text-brown-soft/60">J. LE</p>
+      </article>
+
+      <article class="review-card snap-start shrink-0 w-[280px] md:w-[320px] bg-white border border-line rounded-2xl p-6">
+        <div class="flex text-gold mb-3" aria-hidden="true">★★★★★</div>
+        <p class="text-sm text-brown-soft/90 mb-4">« Super chouette café ☕ Leur matcha est vraiment délicieux. Ambiance très agréable et personnel très souriant. Parfait petit endroit pour travailler ! »</p>
+        <p class="font-mono text-xs uppercase tracking-widest text-brown-soft/60">Zoe Goblet</p>
+      </article>
+
+      <article class="review-card snap-start shrink-0 w-[280px] md:w-[320px] bg-white border border-line rounded-2xl p-6">
+        <div class="flex text-gold mb-3" aria-hidden="true">★★★★★</div>
+        <p class="text-sm text-brown-soft/90 mb-4">« Très chouette endroit, avec un personnel adorable, souriant et très agréable. Un joli choix de pâtisseries variées, avec des options vegan. Si vous cherchez un café sympa à Bruxelles, foncez ! »</p>
+        <p class="font-mono text-xs uppercase tracking-widest text-brown-soft/60">Amandine Symens</p>
+      </article>
+
+      <article class="review-card snap-start shrink-0 w-[280px] md:w-[320px] bg-white border border-line rounded-2xl p-6">
+        <div class="flex text-gold mb-3" aria-hidden="true">★★★★★</div>
+        <p class="text-sm text-brown-soft/90 mb-4">« Un coffee shop super sympa à deux pas des musées important de la ville. Un bon accueil, belle carte des boissons et bonne pâtisserie ! »</p>
+        <p class="font-mono text-xs uppercase tracking-widest text-brown-soft/60">Charlotte Helie</p>
+      </article>
+
+      <article class="review-card snap-start shrink-0 w-[280px] md:w-[320px] bg-white border border-line rounded-2xl p-6">
+        <div class="flex text-gold mb-3" aria-hidden="true">★★★★★</div>
+        <p class="text-sm text-brown-soft/90 mb-4">« Excellent matcha et un des meilleurs roulée cannelle de Bruxelles ! »</p>
+        <p class="font-mono text-xs uppercase tracking-widest text-brown-soft/60">Leana Laurent</p>
+      </article>
+
+      <article class="review-card snap-start shrink-0 w-[280px] md:w-[320px] bg-white border border-line rounded-2xl p-6">
+        <div class="flex text-gold mb-3" aria-hidden="true">★★★★★</div>
+        <p class="text-sm text-brown-soft/90 mb-4">« En plus d'avoir du café de qualité, des pâtisseries succulentes et une déco très chaleureuse, le lieu abrite un staff incroyable. Des gens excessivement bienveillants et voulant faire plaisir et aider au mieux leurs clients. »</p>
+        <p class="font-mono text-xs uppercase tracking-widest text-brown-soft/60">Simon Henrotte</p>
+      </article>
+
+    </div>
+
+    <div class="flex justify-center gap-3 mt-6">
+      <button id="review-prev" aria-label="Avis précédent" class="cta-btn border border-line rounded-full p-2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button id="review-next" aria-label="Avis suivant" class="cta-btn border border-line rounded-full p-2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <p class="relative z-10 text-center mt-8 reveal">
+    <a href="https://www.google.com/maps/place/BOUCHE+-+Specialty+Coffee/@50.8416133,4.3596525,17z/data=!4m8!3m7!1s0x47c3c56f78d0a179:0x5af41ee43ed87baa!8m2!3d50.8416133!4d4.3596525!9m1!1b1!16s%2Fg%2F11ry50tzk2?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="cta-btn inline-block bg-brown text-cream-light font-semibold px-6 py-3 rounded-full">Voir tous les avis</a>
+  </p>
+</section>
+
+<!-- PHOTOS -->
+<section id="photos" aria-labelledby="photos-title" class="bg-cream py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="reveal text-center mb-14">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-terracotta mb-3">Galerie</p>
+      <h2 id="photos-title" class="font-serif italic text-4xl md:text-6xl">L'esprit BOUCHE</h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 reveal-stagger">
+      <div class="photo-tile row-span-2 rounded-xl overflow-hidden cursor-pointer">
+        <img src="images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_01.webp" alt="Comptoir en travertin et machine à café La Marzocco blanche du café BOUCHE à Bruxelles" class="w-full h-full object-cover" loading="lazy" width="1400" height="933">
+      </div>
+      <div class="photo-tile rounded-xl overflow-hidden cursor-pointer">
+        <img src="images/ig-04-baristas-logo-mur.jpg" alt="Baristas de BOUCHE au travail devant le mur avec le logo BOUCHE" class="w-full h-full object-cover" loading="lazy" width="2048" height="3637">
+      </div>
+      <div class="photo-tile rounded-xl overflow-hidden cursor-pointer">
+        <img src="images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_03.webp" alt="Ambiance et détails de la salle du café BOUCHE à Bruxelles" class="w-full h-full object-cover" loading="lazy" width="1400" height="933">
+      </div>
+      <div class="photo-tile rounded-xl overflow-hidden cursor-pointer">
+        <img src="images/bouche-cafe-bruxelles-specialite-brussels-kitchen-_04.webp" alt="Détail du café et de la vaisselle du café BOUCHE à Bruxelles" class="w-full h-full object-cover" loading="lazy" width="1400" height="933">
+      </div>
+      <div class="photo-tile row-span-2 rounded-xl overflow-hidden cursor-pointer">
+        <img src="images/ig-01-salle-arche.jpg" alt="Intérieur chaleureux du café BOUCHE, salle voûtée et tabourets terracotta" class="w-full h-full object-cover" loading="lazy" width="2836" height="5040">
+      </div>
+      <div class="photo-tile rounded-xl overflow-hidden cursor-pointer">
+        <img src="images/ig-03-tasses-marzocco.jpg" alt="Tasses en céramique peintes posées sur la machine La Marzocco de BOUCHE" class="w-full h-full object-cover" loading="lazy" width="1440" height="1798">
+      </div>
+      <div class="photo-tile rounded-xl overflow-hidden cursor-pointer">
+        <img src="images/ig-02-hand-brew-bar.jpg" alt="Bar à café filtre de BOUCHE avec bouilloires et matériel hand brew" class="w-full h-full object-cover" loading="lazy" width="3082" height="5477">
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" class="hidden fixed inset-0 z-[100] bg-brown/95 items-center justify-center p-6">
+  <button id="lightbox-close" aria-label="Fermer la galerie" class="absolute top-6 right-6 text-cream-light">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="" class="max-h-[85vh] max-w-full rounded-lg object-contain">
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-brown text-cream-light/80 py-16">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid md:grid-cols-3 gap-10">
+    <div>
+      <img src="images/logo-bouche.jpg" alt="BOUCHE" class="h-10 w-auto rounded-md mb-3" loading="lazy" width="1080" height="1080">
+      <p class="text-sm">Café de spécialité, cœur de Bruxelles.</p>
+    </div>
+    <nav aria-label="Liens rapides du pied de page">
+      <p class="font-mono text-xs uppercase tracking-widest text-gold mb-3">Navigation</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#carte" class="hover:text-cream-light">Carte</a></li>
+        <li><a href="#pratique" class="hover:text-cream-light">Infos pratiques</a></li>
+        <li><a href="#avis" class="hover:text-cream-light">Avis</a></li>
+        <li><a href="#photos" class="hover:text-cream-light">Photos</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p class="font-mono text-xs uppercase tracking-widest text-gold mb-3">Contact</p>
+      <p class="text-sm mb-3">Rue de Namur 4, 1000 Bruxelles</p>
+      <div class="flex gap-3">
+        <a href="https://www.instagram.com/bouche.coffee/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@bouche.coffee" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3.2v13.6a2.9 2.9 0 1 1-2.2-2.8v-3.2a6.1 6.1 0 1 0 5.4 6V8.9a7.6 7.6 0 0 0 4.5 1.5V7.2a4.3 4.3 0 0 1-4.5-4.2Z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/bouchecoffee/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 mt-10 pt-6 border-t border-cream-light/15 flex flex-col sm:flex-row justify-between gap-3 text-xs text-cream-light/50">
+    <p>© <span id="year"></span> BOUCHE. Tous droits réservés.</p>
+    <a href="/mentions-legales.html" class="hover:text-cream-light/80">Mentions légales</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

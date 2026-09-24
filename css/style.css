@@ -1,0 +1,158 @@
+:root {
+  --cream: #F4EEE3;
+  --cream-light: #FAF6EF;
+  --brown: #241A12;
+  --brown-soft: #3B2B1D;
+  --terracotta: #7C231C;
+  --gold: #C9962E;
+  --line: #DCD0BC;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream-light);
+  color: var(--brown);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: 'Bagel Fat One', cursive; }
+.font-serif { font-family: 'Instrument Serif', serif; }
+.font-mono { font-family: 'Space Mono', monospace; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: transform, opacity;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-stagger.is-visible > * { opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.55s; }
+
+/* Card hover */
+.menu-card, .photo-tile, .review-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+.menu-card:hover, .review-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px -10px rgba(36, 26, 18, 0.25);
+}
+.photo-tile img {
+  transition: transform 0.5s ease;
+}
+.photo-tile:hover img {
+  transform: scale(1.06);
+}
+
+.cta-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -8px rgba(36, 26, 18, 0.35);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Sticky nav shadow on scroll */
+.nav-scrolled {
+  box-shadow: 0 4px 20px -8px rgba(36, 26, 18, 0.2);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+}
+.mobile-menu.open {
+  transform: translateY(0);
+}
+
+/* Lightbox */
+#lightbox {
+  transition: opacity 0.25s ease;
+}
+
+/* Hairline dividers */
+.hairline {
+  border-color: var(--line);
+}
+
+/* Coffee/milk/chocolate "flow" waves behind the reviews section */
+.avis-wave-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+.avis-wave {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 3600px;
+  max-width: none;
+  height: 60%;
+  transform: translateX(-50%);
+}
+.avis-wave-1 path, .avis-wave-1 use { fill: #DAB38C; opacity: 0.55; } /* caramel */
+.avis-wave-2 path, .avis-wave-2 use { fill: #B2652F; opacity: 0.55; } /* mocha */
+.avis-wave-3 path, .avis-wave-3 use { fill: #5D3A24; opacity: 0.45; } /* espresso */
+
+.avis-wave-1 { animation: wave-flow-1800 22s linear infinite; }
+.avis-wave-2 { animation: wave-flow-1800 16s linear infinite reverse; }
+.avis-wave-3 { animation: wave-flow-1800 28s linear infinite; }
+
+/* Loops over exactly one tile width (1800px of the 3600px, double-wide SVG)
+   so the seam between the repeated path and its <use> copy is invisible. */
+@keyframes wave-flow-1800 {
+  0% { transform: translateX(-50%) translateX(0); }
+  100% { transform: translateX(-50%) translateX(-1800px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avis-wave-1, .avis-wave-2, .avis-wave-3 {
+    animation: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .avis-wave { height: 45%; }
+}
